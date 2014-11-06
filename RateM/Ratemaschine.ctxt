@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=zahl
+comment0.target=Ratemaschine(int)
+comment0.text=\n\ \n
+comment1.params=zahl
+comment1.target=java.lang.String\ istEsDieseZahl(int)
+numComments=2

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=col\ ypos\ xpos\ size
+comment0.target=void\ zeichneWand(java.lang.String,\ int,\ int,\ int)
+comment0.text=\n\ zeichne\ Wand\n
+comment1.params=
+comment1.target=void\ zeichne()
+comment1.text=\n\ Zeichne\ die\ Zeichnung.\n
+numComments=2
