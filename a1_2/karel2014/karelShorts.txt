@@ -1,0 +1,47 @@
+
+F1
+moveForward();
+F2
+turnLeft();
+F3
+turnAround();
+F4
+turnRight();
+F5
+pickBeeper();
+F6
+dropBeeper();
+F7
+onBeeper()
+F8
+beeperAhead()
+F9
+leftIsClear()
+F10
+frontIsClear()
+F11
+rightIsClear()
+F12
+start / step into / reset
+Strg C
+Kopieren
+Strg X
+Ausschneiden
+Strg V
+Einfügen
+Alt Cursor
+Zeile verschieben
+Strg D
+Zeile löschen
+Strg Z
+Undo (Letzte Änderung im Quelltext rückgängig machen)
+Strg Y
+Redo (Letztes Undo rückgängig machen)
+Strg Mausrad
+Schriftgröße anpassen
+Strg Leertaste
+Automatische Vervollständigung
+Strg Shift I
+Automatische Einrückung
+Strg Shift R
+Roten Faden einblenden

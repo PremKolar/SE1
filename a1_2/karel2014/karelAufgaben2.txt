@@ -1,0 +1,519 @@
+// ###################################### 2.*   ######################################
+
+// movement functions
+// ######################################
+// ######################################
+void moveLeft()
+{
+    turnLeft();
+    if (frontIsClear())
+    {
+        moveForward();
+    }
+}
+
+void moveRight()
+{
+    turnRight();
+    if (frontIsClear())
+    {
+        moveForward();
+    }
+}
+
+
+void sideStepLeft()
+{
+    moveLeft();
+    turnRight();
+}
+
+void sideStepRight()
+{
+    moveRight();
+    turnLeft();
+}
+
+void moveToWall()
+{
+    while (frontIsClear())
+    {
+        moveForward();
+    }
+}
+
+void moveToWallBackwards()
+{
+    turnAround();
+    moveToWall();
+    turnAround();
+}
+
+void moveDoubleForward()
+{
+    moveForward();
+    moveForward();
+}
+
+
+void moveBackward()
+{
+    turnAround();
+    moveForward();
+    turnAround();
+}
+
+void moveUntilRightClear()
+{
+    while (!rightIsClear() && frontIsClear())
+    {
+        moveForward();
+    }
+}
+
+void moveUntilLeftClear()
+{
+    while (!leftIsClear() && frontIsClear())
+    {
+        moveForward();
+    }
+}
+
+void moveUntilLeftClearOrBeeper()
+{
+    while (!leftIsClear() && frontIsClear() && !onBeeper())
+    {
+        moveForward();
+    }
+}
+
+void uTurnRight()
+{
+    turnRight();
+    moveForward();
+    turnRight();
+}
+
+void uTurnLeft()
+{
+    turnLeft();
+    moveForward();
+    turnLeft();
+}
+
+void moveToWallOrBeeper()
+{
+    while (frontIsClear() && !onBeeper())
+    {
+        moveForward();
+    }
+}
+
+void moveForwPickB()
+{
+    moveForward();
+    pickBeeper();
+}
+// ######################################
+// ######################################
+
+
+
+// ###################################### 2.1.1 ######################################
+void hangOneLampion()
+{
+    pickBeeper();
+    turnLeft();
+    moveToWall();
+    dropBeeper();
+    turnAround();
+    moveToWall();
+    turnLeft();
+}
+
+void hangTheLampions()
+{
+    hangOneLampion();
+    while (frontIsClear())
+    {
+        moveForward();
+        hangOneLampion();
+    }
+}
+
+// ###################################### 2.1.2 ######################################
+void followTheSeeds()
+{
+    while (beeperAhead())
+    {
+        while (beeperAhead())
+        {
+            moveForwPickB()  ;
+        }
+        turnLeft();
+    }
+}
+
+// ###################################### 2.1.3 ######################################
+void cleanTheTunnels()
+{
+    cleanOneTunnel();
+    while (frontIsClear())
+    {
+        moveForward();
+        cleanOneTunnel();
+    }
+}
+
+void cleanOneTunnel()
+{
+    turnLeft();
+    if (onBeeper())
+    {
+        pickBeeper();
+        while (beeperAhead())
+        {
+            moveForwPickB();
+        }
+    }
+    turnAround();
+    moveToWall();
+    turnLeft();
+}
+
+// ###################################### 2.2.1 ######################################
+void increment()
+{
+    while (onBeeper() && frontIsClear())
+    {
+        pickBeeper();
+        moveForward();
+    }
+    if (!onBeeper()) // avoid crashes in case of (1e10 -1) + 1 
+    {
+        dropBeeper();
+    }
+    moveToWallBackwards();
+}
+
+// ###################################### 2.2.2 ######################################
+void decrement()
+{
+    while (!onBeeper() && frontIsClear())
+    {
+        dropBeeper();
+        moveForward();
+    }
+    if (onBeeper())  // avoid crashes in case 0 - 1
+    {
+        pickBeeper();
+        moveToWallBackwards();
+    }
+}
+
+// ###################################### 2.2.3 ######################################
+void topStillLargerZero()
+{  
+    sideStepLeft();
+    increment();
+    sideStepRight();
+}
+
+void addSlow()
+{
+    while (frontIsClear())
+    {
+        decrement();
+        if (frontIsClear())
+        {
+            topStillLargerZero();
+        }
+    }
+}
+
+// ###################################### 2.3.1 ######################################
+void oneStepUp()
+{
+    moveToWall();
+    turnLeft();
+    moveUntilRightClear();
+    turnRight();
+    moveForward();
+    
+}
+
+void oneStepDown()
+{
+    moveUntilRightClear();
+    turnRight();
+    moveToWall();
+    turnLeft();
+}
+
+void saveTheFlowersDown()
+{
+    while (frontIsClear())
+    {
+        dropBeeper();
+        oneStepDown();
+    }
+}
+
+void saveTheFlowersUp()
+{
+    oneStepUp();
+    while (onBeeper())
+    {
+        pickBeeper();
+        oneStepUp();
+    }
+}
+
+void saveTheFlowers()
+{
+    saveTheFlowersUp();
+    saveTheFlowersDown();
+}
+
+// ###################################### 2.3.2 ######################################
+void findTeddyBear()
+{
+    while (!onBeeper())
+    {
+        while (!frontIsClear())
+        {
+            turnLeft();
+        }
+        moveForward();
+    }
+}
+
+// ###################################### 2.3.3 ######################################
+void jumpHurdle()
+{
+    turnLeft();
+    moveUntilRightClear();
+    uTurnRight();
+    moveToWall();
+    turnLeft();
+}
+
+void jumpTheHurdles()
+{
+    moveToWallOrBeeper();
+    while (!onBeeper())
+    {
+        jumpHurdle();
+        moveToWallOrBeeper();
+    }
+}
+
+// ###################################### 2.4.1 ######################################
+void goRightOrTurnAround()
+{
+    if (rightIsClear())
+    {
+        moveRight();
+    }
+    else
+    {
+        turnAround(); // since heading was inverted upon returning from a dead end, the new left is the old right
+    }
+}
+
+void solveTheMaze()
+{
+    while (!onBeeper())
+    {
+        moveUntilLeftClearOrBeeper();
+        if (!onBeeper()) // could be onBeeper with leftIsClear also
+        {
+            if (leftIsClear())
+            {
+                moveLeft();
+            }
+            else
+            {
+                goRightOrTurnAround();
+            }
+        }
+    }
+}
+
+// ###################################### 2.4.2 ######################################
+void fillCase()
+{
+    while (frontIsClear())
+    {
+        moveForward();
+        if (!onBeeper())
+        {
+            dropBeeper();
+        }
+    }
+    turnAround();
+    moveToWall();
+    turnLeft();
+}
+
+void emptyCase()
+{
+    turnAround();
+    while (frontIsClear())
+    {
+        moveForward();
+        if (onBeeper())
+        {
+            pickBeeper();
+        }
+    }
+    turnLeft();
+}
+
+void moveBeyondHalf()
+{
+    repeat(5)
+    {
+        moveForward();
+    }
+}
+
+void quantizeColumn()
+{
+    turnLeft();
+    moveBeyondHalf();
+    if (onBeeper())
+    {
+        fillCase();
+    }
+    else
+    {
+        emptyCase();
+    }
+}
+
+void quantize()
+{
+    quantizeColumn();
+    repeat(9)
+    {
+        moveForward();
+        if (onBeeper())
+        {
+            quantizeColumn();
+        }
+    }
+}
+
+// ###################################### 2.4.2 ######################################
+// --legend--
+// Z: 0
+// I: 1
+// T: 10
+// E: 11
+// --legend--
+
+void caseTorE()
+{
+    moveDoubleForward();
+    if (onBeeper()) 
+    {
+        caseE(); 
+    }
+    else
+    {
+        caseT();
+    }
+}
+
+void caseIorT()
+{
+    moveDoubleForward();
+    if (onBeeper())
+    {
+        caseT();        
+    }
+    else
+    {
+        caseI();
+    }
+}
+
+void caseZorI()
+{
+    moveDoubleForward();
+    if (onBeeper())
+    {
+        caseI();        
+    }
+    else
+    {
+        caseZ();
+    }
+}
+
+void caseZ()
+{
+    sideStepRight();  // does "nothing" if wall on right
+    moveToWallBackwards();
+}
+
+void caseI()
+{
+    writeOneToColumn();
+    caseZ();
+}
+
+void caseT()
+{
+    rememberOneNextOrder();
+    moveToWallBackwards();
+}
+
+void caseE()
+{
+    writeOneToColumn();
+    caseT();
+}
+
+void writeOneToColumn()
+{
+    moveForward();    
+    dropBeeper(); 
+    moveBackward();    
+}
+
+void rememberOneNextOrder()
+{
+    sideStepRight();
+    dropBeeper();
+}
+
+void forkCases()
+{
+    // all cases get called from 3rd row (counted from top) in current column
+    if (onBeeper() && beeperAhead())
+    {
+        caseTorE();
+    }
+    else
+    {        
+        if (onBeeper() || beeperAhead())
+        {
+            caseIorT();
+        }
+        else
+        {
+            caseZorI();
+        }            
+    }
+}
+
+void addFast()
+{
+    // btw: there is a mistake in the goal-version, in the case when digits(#1 + #2) > max(digits([#1 #2]))  eg 1+1=0 in goal version
+    repeat(9)    
+    {
+        forkCases();   
+    }
+}
