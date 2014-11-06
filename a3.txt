@@ -1,0 +1,24 @@
+3.2.3
+
+Jede Zeile muss mit einem Semikolon terminiert werden.
+Die entsprechende Zeile ist farblich markiert. 
+Es wird
+" ';' expected "
+angezeigt.
+
+3.2.5
+e.g.
+public class Kreis
+{
+	// [scope]		[type] 	[varName];
+	private 	String 	_farbe;
+	...
+		_farbe = "blau";
+	...
+}
+
+bei einer variablendeklaration wird durch einen beliebigen variablennamen eine variable eines bestimmten typs initialisiert.
+im obigen bsp wird innerhalb einer klasse zunächst der name '_farbe' als schlüssel für einen beliebigen ascii string deklariert.
+in einer, in selbiger klasse enthaltener methode  wird diese variable dann mit dem string "blau" assoziiert. die aufrufbarkeit "private" bewirkt in diesem fall dass, die variable innerhalb der gesamten klasse bekannt ist. ausserhalb ihrer klasse ist sie allerdings unbekannt.
+
+
