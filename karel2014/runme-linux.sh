@@ -1,1 +1,0 @@
-java -cp bin.zip:scala-library.jar:scala-swing.jar:scala-parser-combinators.jar:rsyntaxtextarea.jar -Dswing.defaultlaf=com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel gui.Main
