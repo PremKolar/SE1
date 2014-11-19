@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Ampel()
+comment0.text=\n\ Initialisiert\ eine\ neue\ Ampel\ auf\ die\ erste\ Phase\ (gruen).\n
+comment1.params=
+comment1.target=boolean\ leuchtetRot()
+comment1.text=\n\ Gibt\ an,\ ob\ die\ rote\ Lampe\ leuchtet.\n
+comment2.params=
+comment2.target=boolean\ leuchtetGelb()
+comment2.text=\n\ Gibt\ an,\ ob\ die\ gelbe\ Lampe\ leuchtet.\n
+comment3.params=
+comment3.target=boolean\ leuchtetGruen()
+comment3.text=\n\ Gibt\ an,\ ob\ die\ gruene\ Lampe\ leuchtet.\n
+comment4.params=
+comment4.target=void\ schalteWeiter()
+comment4.text=\n\ Schaltet\ die\ Ampel\ in\ die\ naechste\ Phase\ (gruen\ ->\ gelb\ ->\ rot\ ->\ rot/gelb\ ->\ gruen).\n
+numComments=5
