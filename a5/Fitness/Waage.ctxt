@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=koerperMasseInG
+comment0.target=Waage(int)
+comment0.text=\n\ Gib\ deine\ koerpermasse\ in\ Gramm\ an\!\n\ @param\ koerpermasse\ \n\ \ \ \ \ \ koerpermasse\ [g]\n
+comment1.params=
+comment1.target=int\ gibMinimalMasse()
+comment1.text=\n\ all-time\ max(mass(t))\ \ \ \n\ @param\ \ _allZeitMasseMinimum;\n\ \ \ \ \ \ \ \ \ \ \ gr\u00F6\u00DFte\ Masse\ eh\ und\ je\ [g]\n
+comment2.params=
+comment2.target=int\ gibMaximalMasse()
+comment2.text=\n\ all-time\ max(mass(t))\ \ \ \n\ @param\ \ _allZeitMasseMaximum;\n\ \ \ \ \ \ \ \ \ \ \ gr\u00F6\u00DFte\ Masse\ eh\ und\ je\ [g]\n
+comment3.params=
+comment3.target=int\ gibDurchschnittsmasse()
+comment3.text=\n\ all-time\ mean(mass(t))\ \ \ \n\ @param\ \ _durchschnittsMasse;\n\ \ \ \ \ \ \ \ \ \ \ Mittelwert\ [g]\n
+comment4.params=
+comment4.target=int\ gibTrend()
+comment4.text=\n\ trendRichtung.\n\ @param\ trendOut\ \n\ \ \ \ \ -1,\ falls\ der\ Besitzer\ leichter\ geworden\ ist\n\ \ \ \ \ +1,\ falls\ er\ schwerer\ geworden\ ist\n\ \ \ \ \ 0\ sonst\n\ \ \ \ \ [\ ]\n
+comment5.params=valueOld\ valueNew\ N
+comment5.target=int\ meanOnFly(int,\ int,\ int)
+comment5.text=\n\ mittelwert\ updaten\n\ @param\ updatedMean\n\ \ \ \ \ \ \ neuer\ mittelwert\ (gramm-genauigkeit)\n
+comment6.params=
+comment6.target=void\ updateExtremataAndMean()
+comment6.text=\n\ aktualisiert\ min,max,mean\ von\ masse(zeit)\ \ \ \ \n
+comment7.params=neueMasse
+comment7.target=void\ registriere(int)
+comment7.text=\n\ Gib\ deine\ koerpermasse\ in\ Gramm\ an\!\n\ @param\ koerpermasse\ \n\ \ \ \ \ \ koerpermasse\ [g]\n
+numComments=8
