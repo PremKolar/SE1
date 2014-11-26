@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+/usr/lib/jvm/java-8-oracle/bin/javadoc
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.8
+-classpath
+/usr/share/bluej/bluejcore.jar:/usr/share/bluej/junit-4.8.2.jar:/usr/share/bluej/userlib/pi4j-device.jar:/usr/share/bluej/userlib/pi4j-service.jar:/usr/share/bluej/userlib/pi4j-core.jar:/usr/share/bluej/userlib/pi4j-gpio-extension.jar:/informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager
+-d
+/informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+/usr/share/bluej/bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+/informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/Ueberweisungsmanger.java
+<---- end of javadoc command ---->
+Loading source file /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/Ueberweisungsmanger.java...
+Constructing Javadoc information...
+Standard Doclet version 1.8.0_25
+Building tree for all the packages and classes...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/Ueberweisungsmanger.html...
+/informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/Ueberweisungsmanger.java:7: warning - @koopmann, is an unknown tag.
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/package-frame.html...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/package-summary.html...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/allclasses-frame.html...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/allclasses-noframe.html...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/index.html...
+Generating /informatik2/students/home/4koopman/Documents/SE1/a6/Blatt06_Ueberweisungsmanager/doc/stylesheet.css...
+1 warning

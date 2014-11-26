@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=a\ b\ c
+comment0.target=QuadratischeGleichung(double,\ double,\ double)
+comment0.text=\n\ @param\ a,\ b\ ,\ c\ \n\ \ \ \ \ \ \ \ \ \ \ *\ gib\ parameter\ a,b,c\ wie\ in\ a\ x^2\ +\ b\ x\ +\ c\ \=\ 0\n
+comment1.params=
+comment1.target=void\ makePandQandSQrtTerm()
+comment2.params=
+comment2.target=double\ ersteNullstelle()
+comment3.params=
+comment3.target=double\ zweiteNullstelle()
+comment4.params=
+comment4.target=int\ anzahlNullstellen()
+numComments=5

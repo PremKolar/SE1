@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=anzeigeGrenze
+comment0.target=Nummernanzeige(int)
+comment0.text=\n\ Konstruktor\ fuer\ Exemplare\ der\ Klasse\ Nummernanzeige\n\ @param\ anzeigeGrenze\ das\ Limit\ fuer\ die\ Anzeige\n
+comment1.params=
+comment1.target=int\ gibLimit()
+comment1.text=\n\ Liefere\ das\ Limit\ dieser\ Anzeige.\n
+comment2.params=
+comment2.target=int\ gibWert()
+comment2.text=\n\ Liefere\ den\ aktuellen\ Wert\ dieser\ Anzeige.\n
+comment3.params=
+comment3.target=java.lang.String\ gibAnzeiewert()
+comment3.text=\n\ Liefere\ den\ Anzeigewert,\ also\ den\ Wert\ dieser\ Anzeige\ als\ einen\ String\n\ mit\ zwei\ Ziffern.\ Wenn\ der\ Wert\ der\ Anzeige\ kleiner\ als\ zehn\ ist,\ wird\n\ das\ Ergebnis\ mit\ einer\ fuehrenden\ Null\ versehen.\n
+comment4.params=wert
+comment4.target=void\ setzeWert(int)
+comment4.text=\n\ Setze\ den\ Wert\ der\ Anzeige\ auf\ den\ angegebenen\ 'wert'.\n\ Wenn\ der\ angegebene\ Wert\ unter\ Null\ oder\ groesser\ gleich\n\ dem\ Limit\ ist,\ tue\ nichts.\n\ \n\ @param\ wert\n\ \ \ \ \ \ zu\ setzender\ Wert\n
+comment5.params=
+comment5.target=void\ erhoehen()
+comment5.text=\n\ Erhoehe\ den\ Wert\ dieser\ Anzeige\ um\ Eins.\ Wenn\ das\ Limit\ erreicht\ ist,\n\ setze\ den\ Wert\ wieder\ auf\ Null.\n
+numComments=6

@@ -1,0 +1,2 @@
+Die Punktnotation ist eine Kurzschreibweise, mit der man Informationen über ein Objekt kurz und eindeutig aufschreiben kann.
+man kann damit die methoden einer klasse in der form klasse.methode() direkt aufrufen.

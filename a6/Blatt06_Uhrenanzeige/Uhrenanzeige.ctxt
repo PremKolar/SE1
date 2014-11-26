@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Uhrenanzeige()
+comment0.text=\n\ Konstruktor\ fuer\ Exemplare\ der\ Klasse\ Uhrenanzeige\ mit\ 00\:00\ Initialisierung\n
+comment1.params=hh\ mm
+comment1.target=Uhrenanzeige(int,\ int)
+comment1.text=\n\ Konstruktor\ fuer\ Exemplare\ der\ Klasse\ Uhrenanzeige\n\ @param\ hh\n\ \ \ \ \ \ Initialwert\ f\u00FCr\ Stunden\n\ @param\ mm\n\ \ \ \ \ \ Initialwert\ f\u00FCr\ Minuten\n
+comment2.params=
+comment2.target=java.lang.String\ gibUhrzeit()
+comment2.text=\n\ gibt\ aktuelle\ Uhrzeit\ als\ String\ aus\ \ \ \ \ \ \n
+comment3.params=
+comment3.target=void\ taktsignalGeben()
+comment3.text=\n\ erh\u00F6ht\ die\ Uhrzeit\ um\ eine\ Minute\n
+comment4.params=mmPlus
+comment4.target=void\ taktsignalGeben(int)
+comment4.text=\n\ erh\u00F6ht\ die\ Uhrzeit\ um\ eine\ Minute\n
+numComments=5
