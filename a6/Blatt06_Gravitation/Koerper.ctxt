@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=masse\ position\ geschwindigkeit
+comment0.target=Koerper(double,\ Vektor,\ Vektor)
+comment0.text=\n\ Initialisiert\ einen\ Koerper\ auf\ die\ angegebene\ Masse,\ Position\ und\ Geschwindigkeit.\n
+comment1.params=
+comment1.target=Vektor\ gibPosition()
+comment1.text=\n\ Liefert\ die\ Position.\n
+comment2.params=einfluss
+comment2.target=void\ spuereDenEinflussVon(Koerper)
+comment2.text=\n\ Passt\ die\ Beschleunigung\ gemaess\ Abstand\ und\ Masse\ des\ uebergebenen\ Koerpers\ an.\n\ Diese\ Methode\ sollte\ im\ ersten\ Schritt\ fuer\ alle\ beteiligten\ Koerper\ aufgerufen\ werden.\n
+comment3.params=
+comment3.target=void\ beruecksichtigeAlleEinfluesse()
+comment3.text=\n\ Passt\ die\ Geschwindigkeit\ und\ die\ Position\ gemaess\ der\ Beschleunigung\ an.\n\ Diese\ Methode\ sollte\ im\ zweiten\ Schritt\ fuer\ alle\ beteiligten\ Koerper\ aufgerufen\ werden.\n
+numComments=4

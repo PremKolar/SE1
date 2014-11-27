@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Simulation()
+comment0.text=\n\ Initialisiert\ die\ Simulation.\n
+comment1.params=groesse
+comment1.target=javax.swing.JLabel\ neuesSymbol(int)
+comment1.text=\n\ Liefert\ ein\ neues\ kreisrundes\ Zeichen,\ das\ einen\ Himmelskoerper\ darstellen\ soll.\n
+comment2.params=ignored
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=\n\ @see\ ActionListener.actionPerformed\n
+comment3.params=component\ x\ y
+comment3.target=void\ setPosition(javax.swing.JComponent,\ double,\ double)
+comment3.text=\n\ Setzt\ den\ Mittelpunkt\ einer\ Komponente\ auf\ die\ angegebenen\ Koordinaten.\n
+numComments=4
